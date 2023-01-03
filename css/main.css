@@ -20,7 +20,7 @@ h6,
 .h5,
 .h6 {
     font-family: raleway, sans-serif;
-    color: #4b4741;
+    color: #343330;
     text-align: center;
     font-weight: 800
 }
@@ -59,7 +59,7 @@ small {
     position: relative;
     height: 3px;
     width: 113px;
-    background-color: #f9c56a;
+    background-color: #e60000;
     margin: 0 auto
 }
 
@@ -305,6 +305,61 @@ fieldset[disabled] .btn-default.active {
 
 .navbar-static-top {
     background-color: #000
+}
+
+.popup {
+    display: flex;
+    background: #000000ad;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    /* opacity: 0; */
+}
+
+.modal {
+    background: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#modal::backdrop {
+    background: #00000078;
+}
+
+#modal {
+    border-style: none;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+#cerrar {
+    background: rgb(30 30 30);
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-top: 3em;
+    transition: 2s;
+}
+
+#cerrar:hover {
+    background: #fff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    color: #000;
+    transition: 0.5s;
 }
 
 .navbar .navbar-nav>li>a {
@@ -754,7 +809,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .flecha:hover {
-    color: #f1a000;
+    color: #0d8dc8;
     transition: 0.6s;
 }
 
@@ -1177,11 +1232,10 @@ fieldset[disabled] .btn-default.active {
 .menu-tags2 span,
 .menu-tags3 span,
 .menu-tags4 span {
-    font-family: raleway, sans-serif;
-    font-size: 18px;
+    font-family: Vintage;
+    font-size: 2.5em;
     color: #828281;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 300;
     margin: 0 20px;
     padding-bottom: 2px;
     padding-top: 5px;
@@ -1194,7 +1248,7 @@ fieldset[disabled] .btn-default.active {
 .menu-tags2 .tagsort2-active,
 .menu-tags3 .tagsort3-active,
 .menu-tags4 .tagsort4-active {
-    border-bottom: 3px solid #f9c56a;
+    border-bottom: 3px solid #e60000;
     color: #4b4741
 }
 
@@ -1207,7 +1261,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .menu .food-menu .menu-item.featured {
-    border-left: 3px solid #f9c56a
+    border-left: 3px solid #e60000
 }
 
 .menu .food-menu .menu-item .dotted-bg,
@@ -1582,7 +1636,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .menu2 {
-    background: #ececec
+    background: url('../img/fondo-vintage.jpg');
 }
 
 .menu-item2 {
@@ -1601,12 +1655,12 @@ fieldset[disabled] .btn-default.active {
     -webkit-border-radius: 27px 28px 28px 27px/27px 27px 28px 28px;
     -moz-border-radius: 27px 28px 28px 27px/27px 27px 28px 28px;
     border-radius: 27px 28px 28px 27px/27px 27px 28px 28px;
-    background-color: #f9c56a;
+    background-color: #004e93;
     -webkit-box-shadow: 0 5px 4px rgba(177, 177, 177, .75);
     -moz-box-shadow: 0 5px 4px rgba(177, 177, 177, .75);
     box-shadow: 0 5px 4px rgba(177, 177, 177, .75);
     text-shadow: 0 5px 5px #c1913e;
-    border: solid 1px #f2ba57;
+    border: solid 1px #004e93;
     color: #fff;
     line-height: 0;
     font-weight: 300;
@@ -1694,19 +1748,25 @@ fieldset[disabled] .btn-default.active {
 
 .menu4-overlay {
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
     box-shadow: 0 5px 5px #e2e2e2;
     margin-bottom: 0;
     margin-top: -10px;
     text-align: center;
     text-decoration: none!important;
-    display: table
+    display: table;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    border-top-style: none;
 }
 
 .menu4-overlay h4 {
-    font-size: 19px;
+    font-size: 34px;
     color: #4b4741;
-    margin: 46px 0 15px
+    margin: 25px 0 15px 0px;
+    font-family: 'Vintage';
+    font-weight: 400;
 }
 
 .menu4-overlay p {
@@ -1720,11 +1780,36 @@ fieldset[disabled] .btn-default.active {
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #e7ad48;
+    color: #004e93;
     width: 100%;
     display: table;
     margin: 0;
-    padding: 13px 0 45px
+    padding: 13px 0 20px
+}
+
+dialog {
+    width: 100%;
+}
+
+.preparacion {
+    margin-bottom: 1em;
+    background: #ffffff73;
+    color: #004e93;
+    border-radius: 3px;
+    border-style: solid;
+    padding: 0.6em;
+    border-color: #004e93;
+    border-width: 1px;
+    font-weight: 600;
+    transition: 0.6s;
+    font-size: 13px;
+}
+
+.preparacion:hover {
+    background: #004e93;
+    color: #fff;
+    border-style: none;
+    transition: 0.6s;
 }
 
 .main-content {
@@ -3367,7 +3452,7 @@ article p {
     .menu-tags2 span,
     .menu-tags3 span,
     .menu-tags4 span {
-        font-size: 15px;
+        font-size: 28px;
         margin: 0 8px 4px;
         display: inline-block
     }

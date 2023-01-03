@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Vintage;
+    /* src: url('Wedding.otf'); */
+    src: url('EAGLESE.ttf');
+}
+
+@font-face {
+    font-family: SweetWedding;
+    src: url('SweetWedding.ttf');
+}
+
+.sociales {
+    margin-top: 2em;
+}
+
+.sociales a {
+    font-size: 30px;
+    color: #000;
+    transition: 0.4s;
+}
+
+.sociales a:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+.sociales p {
+    color: #000;
+    font-size: 16px;
+}
+
+.teteras {
+    font-family: SweetWedding;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: left;
+    border-bottom-style: dashed;
+}
+
+.teterasp {
+    color: #000;
+}
