@@ -20,7 +20,7 @@ h6,
 .h5,
 .h6 {
     font-family: raleway, sans-serif;
-    color: #343330;
+    color: #4b4741;
     text-align: center;
     font-weight: 800
 }
@@ -59,7 +59,7 @@ small {
     position: relative;
     height: 3px;
     width: 113px;
-    background-color: #e60000;
+    background-color: #f9c56a;
     margin: 0 auto
 }
 
@@ -75,9 +75,9 @@ a:hover {
 }
 
 html {
-    text-rendering: optimizeLegibility!important;
-    -webkit-font-smoothing: antialiased!important;
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility!important;
+    -webkit-font-smoothing: antialiased!important
 }
 
 .primary-color {
@@ -296,7 +296,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, .33);
+    background-color: rgba(0, 0, 0);
     color: #fff;
     z-index: 50;
     margin: 0;
@@ -307,63 +307,9 @@ fieldset[disabled] .btn-default.active {
     background-color: #000
 }
 
-.popup {
-    display: flex;
-    background: #000000ad;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
-    /* opacity: 0; */
-}
-
-.modal {
-    background: #fff;
-    width: 600px;
-    max-width: 100%;
-    padding: 30px 50px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-#modal::backdrop {
-    background: #00000078;
-}
-
-#modal {
-    border-style: none;
-    border-radius: 10px;
-    transition: 2s;
-}
-
-#cerrar {
-    background: rgb(30 30 30);
-    color: #fff;
-    width: 100%;
-    height: 30px;
-    border-radius: 10px;
-    transition: 0.5s;
-    margin-top: 3em;
-    transition: 2s;
-}
-
-#cerrar:hover {
-    background: #fff;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #000;
-    color: #000;
-    transition: 0.5s;
-}
-
 .navbar .navbar-nav>li>a {
     color: #ececec;
+    text-transform: uppercase;
     padding: 25px 15px;
     font-weight: 700;
     font-size: 13px;
@@ -753,10 +699,7 @@ fieldset[disabled] .btn-default.active {
     position: relative;
     height: 100vh;
     width: 100%;
-    /*     background: url(../img/hidden-restobar-comida-fondo.jpeg) no-repeat center center; */
-    background-image: linear-gradient(to right, rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)), url(../img/hidden-restobar-comida-fondo.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(rgb(24 24 24 / 55%), rgb(17 17 17 / 69%)), url(../img/hidden-restobar-comida-fondo.jpeg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -776,8 +719,8 @@ fieldset[disabled] .btn-default.active {
 
 .home .tittle-block h1 {
     color: #fff;
-    font-size: 40px;
-    padding-top: 1em;
+    font-size: 3em;
+    text-transform: initial;
 }
 
 .home .tittle-block h2 {
@@ -789,42 +732,20 @@ fieldset[disabled] .btn-default.active {
 
 .home .scroll-down {
     position: absolute;
-    bottom: 0px;
+    bottom: 40px;
     left: 50%;
-    transform: translateX(-50%);
-}
-
-.botonFlecha {
-    background: transparent;
-    border-style: none;
-    font-size: 20px;
-    padding-top: 2em;
-}
-
-.flecha {
-    color: #fff;
-    transition: 0.6s;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.flecha:hover {
-    color: #0d8dc8;
-    transition: 0.6s;
+    transform: translateX(-50%)
 }
 
 @media(max-width:768px) {
     .home .tittle-block img {
-        width: 80%;
+        width: 90%;
     }
     .home .tittle-block h1 {
-        font-size: 15px
+        font-size: 42px
     }
     .home .tittle-block h2 {
         font-size: 24px
-    }
-    .flecha {
-        font-size: 14px;
     }
 }
 
@@ -1241,14 +1162,14 @@ fieldset[disabled] .btn-default.active {
     padding-top: 5px;
     cursor: pointer;
     transition: all .5s ease;
-    border-bottom: 3px solid transparent
+    border-bottom: 3px solid transparent;
 }
 
 .menu-tags .tagsort-active,
 .menu-tags2 .tagsort2-active,
 .menu-tags3 .tagsort3-active,
 .menu-tags4 .tagsort4-active {
-    border-bottom: 3px solid #e60000;
+    border-bottom: 3px solid #f9c56a;
     color: #4b4741
 }
 
@@ -1261,7 +1182,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .menu .food-menu .menu-item.featured {
-    border-left: 3px solid #e60000
+    border-left: 3px solid #f9c56a
 }
 
 .menu .food-menu .menu-item .dotted-bg,
@@ -1474,7 +1395,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .page_header {
-    background: url(../img/header/1.jpg) no-repeat center top;
+    background-image: linear-gradient(to right, rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)), url(../img/hidden-restobar-comida-fondo.jpeg);
     background-size: cover;
     padding: 200px 0 150px
 }
@@ -1655,12 +1576,12 @@ fieldset[disabled] .btn-default.active {
     -webkit-border-radius: 27px 28px 28px 27px/27px 27px 28px 28px;
     -moz-border-radius: 27px 28px 28px 27px/27px 27px 28px 28px;
     border-radius: 27px 28px 28px 27px/27px 27px 28px 28px;
-    background-color: #004e93;
+    background-color: #f9c56a;
     -webkit-box-shadow: 0 5px 4px rgba(177, 177, 177, .75);
     -moz-box-shadow: 0 5px 4px rgba(177, 177, 177, .75);
     box-shadow: 0 5px 4px rgba(177, 177, 177, .75);
     text-shadow: 0 5px 5px #c1913e;
-    border: solid 1px #004e93;
+    border: solid 1px #f2ba57;
     color: #fff;
     line-height: 0;
     font-weight: 300;
@@ -1748,23 +1669,23 @@ fieldset[disabled] .btn-default.active {
 
 .menu4-overlay {
     width: 100%;
-    background-color: transparent;
-    box-shadow: 0 5px 5px #e2e2e2;
+    background-color: #fff0;
     margin-bottom: 0;
     margin-top: -10px;
     text-align: center;
     text-decoration: none!important;
     display: table;
     border-style: solid;
-    border-width: 1px;
     border-color: #000;
-    border-top-style: none;
+    border-width: 1px;
+    border-radius: 5px;
+    border-top-color: transparent;
 }
 
 .menu4-overlay h4 {
-    font-size: 34px;
+    font-size: 40px;
     color: #4b4741;
-    margin: 25px 0 15px 0px;
+    margin: 32px 0 15px 0px;
     font-family: 'Vintage';
     font-weight: 400;
 }
@@ -1772,7 +1693,7 @@ fieldset[disabled] .btn-default.active {
 .menu4-overlay p {
     color: #4b4741;
     font-size: 18px;
-    line-height: 24px
+    line-height: 24px;
 }
 
 .menu4-overlay .price {
@@ -1780,36 +1701,11 @@ fieldset[disabled] .btn-default.active {
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #004e93;
+    color: #101c99;
     width: 100%;
     display: table;
     margin: 0;
-    padding: 13px 0 20px
-}
-
-dialog {
-    width: 100%;
-}
-
-.preparacion {
-    margin-bottom: 1em;
-    background: #ffffff73;
-    color: #004e93;
-    border-radius: 3px;
-    border-style: solid;
-    padding: 0.6em;
-    border-color: #004e93;
-    border-width: 1px;
-    font-weight: 600;
-    transition: 0.6s;
-    font-size: 13px;
-}
-
-.preparacion:hover {
-    background: #004e93;
-    color: #fff;
-    border-style: none;
-    transition: 0.6s;
+    padding: 13px 0 45px
 }
 
 .main-content {
@@ -3349,6 +3245,9 @@ article p {
 }
 
 @media(max-width:992px) {
+    .hidden-img {
+        width: 90%;
+    }
     .list {
         padding-left: 0;
         margin-bottom: 0
@@ -3452,7 +3351,7 @@ article p {
     .menu-tags2 span,
     .menu-tags3 span,
     .menu-tags4 span {
-        font-size: 28px;
+        font-size: 15px;
         margin: 0 8px 4px;
         display: inline-block
     }
@@ -3553,12 +3452,6 @@ textarea {
     transform: scale(1);
     transition: .4s;
     opacity: 1
-}
-
-.menu-item4:hover img {
-    transform: scale(1.1);
-    transition: .4s;
-    opacity: .9
 }
 
 .menu4-overlay {
