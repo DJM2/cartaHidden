@@ -76,6 +76,12 @@ body.offcanvas-menu:before {
     border-bottom-color: #a40707
 }
 
+.teteras span {
+    font-family: 'SweetWedding';
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
 .teterasp {
     color: #000;
     font-family: josefin sans, sans-serif;
@@ -118,8 +124,11 @@ body.offcanvas-menu:before {
 }
 
 .menu4-overlay {
-    background: #fff;
+    background: #fff0;
     padding: 0.8em;
+    border-style: solid;
+    border-width: 1px;
+    border-top-style: none;
 }
 
 .menu4-overlay h4 {
@@ -130,6 +139,7 @@ body.offcanvas-menu:before {
 
 .menu4-overlay p {
     color: #000;
+    font-weight: 500;
 }
 
 .price {
